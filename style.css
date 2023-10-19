@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* Navbar :start */
+#navbar{
+    background-color: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: opx 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background-color: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background-color: orange;
+    color: white;
+    border: none;
+    letter-spacing: 1px;
+    /* border-radius: 3px; */
+    transition: 0.2s ease;
+}
+#navbar form button:hover{
+    background-color: aqua;
+    color: white;
+    
+}
+/* Nav Bar ends  */
+
+
+/* Home section start  */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+
+}
+.changecontent::after{
+   content: ' ';
+   color: #ffa500;
+   text-shadow: 0px 1px 1px black;
+   animation: changetext 10s infinite linear; 
+}
+
+@keyframes changetext{
+ 0%{content: "Gateway of India";}
+ 20%{content: "CSMT";}
+ 50%{content: "Shree Siddhivinayak Temple";}
+ 80%{content: "Sanjay Gandhi National Park";}
+ 70%{content: "Haji Ali Dargah";}
+ 10%{content: "Juhu";}
+ 45%{content: "Elephanta Caves";}
+ 65%{content: "Marine Drive";}
+ 90%{content: "Shree Mahalakshmi Temple";}
+ 30%{content: "Jehangir Art Gallery";}
+ 40%{content: "Hanging gardens";}
+}
+
+.home .content p{
+color: white;
+font-size: 15px;
+font-weight: 600;
+text-align: 0px 1px 1px black;
+margin-top: 5px;
+margin-bottom: 30px;
+
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+    /* width: 170px; */
+}
+.home .content a:hover{
+    /* width: 170px; */
+    background-color: #ffa500;
+    color: white;
+
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+       font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+/* Home section ends  */
+
+
+
+/* section book start  */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 550;
+}
+.main-text h1 span{
+color: #ffa500;
+}
+.book .card{
+   border-radius: 10px;
+   box-shadow: 0px 5px 5px -6px black; 
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background-color: #ffa500;
+    color:white;
+    margin-top: 10px;
+    transition: 0.5s;
+
+}
+.book .submit:hover{
+    width: 170px;
+
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+    
+}
+
+/* section book ends  */
+
+
+
+/* section packages strat  */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 550;
+    text-shadow:0px 1px 1px  black ;
+
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow:rgba(0,0,0,0.1) 0px 4px 12px ;
+
+}
+
+.packages .card img{
+    border-radius: 5px;
+    width: 400px;
+    height: 350px;
+
+}
+.packages .card .card-body{
+   background: transparent;
+
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+   font-size: 15px; 
+}
+.checked{
+    color: #ffa500;
+
+}
+.star i{
+    font-size: 15px;
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+}
+.packages .card .card-body a{
+    padding: 9px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/* section packages ends  */
+
+/* section services start  */
+.services{
+   background: #f9f9f9;
+   margin-top: 50px;
+
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+
+
+/* section services ends  */
+
+
+
+/* section gallary start */
+.gallary{
+    margin-top: 50px;
+
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow:rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+
+
+/* section gallary ends */
+
+/* section about start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+.about p{
+    font-weight: 550;
+}
+#about-btn{
+    width: 15opx;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+
+#about-btn:hover{
+    width: 170px;
+
+}
+@media (max-width:765px){
+    .about{
+        padding: 0%;
+    }
+}
+
+/* section about start */
+
+/* section footer start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: white;
+}
+.address{
+    align-items: flex-end;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+}
+.social-links i:hover{
+    background-color: #ffa500;
+    width: 50px;
+}
+
+
+
+/* section footer star
+t */
